@@ -8,7 +8,7 @@
         tools:context=".MainActivity">
 
     <TextView
-            android:text="定価"
+            android:text="@string/price_label"
             android:layout_width="51dp"
             android:layout_height="34dp"
             android:id="@+id/textView2"
@@ -27,9 +27,9 @@
             app:layout_constraintBaseline_toBaselineOf="@+id/textView2" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="48dp" android:layout_marginRight="48dp"
             app:layout_constraintStart_toEndOf="@+id/textView2" android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp"/>
+            android:layout_marginStart="32dp" android:autofillHints="" tools:targetApi="o"/>
     <TextView
-            android:text="割引率"
+            android:text="@string/discount_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView3"
@@ -47,9 +47,10 @@
             android:id="@+id/discount" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="48dp" android:layout_marginRight="48dp"
             app:layout_constraintStart_toEndOf="@+id/textView3" android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp" app:layout_constraintBaseline_toBaselineOf="@+id/textView3"/>
+            android:layout_marginStart="32dp" app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+            android:autofillHints="" tools:targetApi="o"/>
     <Button
-            android:text="計算する"
+            android:text="@string/calculate_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/calculate" android:layout_marginTop="48dp"
